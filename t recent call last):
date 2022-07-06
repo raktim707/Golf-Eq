@@ -1,0 +1,276 @@
+============= i-01c01badb7296cd8c ==============
+----------------------------------------
+/var/log/nginx/error.log
+----------------------------------------
+2022/07/06 09:33:41 [error] 4109#4109: *85 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.35.244, server: , request: "GET /hudson HTTP/1.1", upstream: "http://127.0.0.1:8000/hudson", host: "100.20.166.166"
+2022/07/06 09:36:54 [error] 4109#4109: *131 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.19.203, server: , request: "GET /.env HTTP/1.1", upstream: "http://127.0.0.1:8000/.env", host: "52.37.17.166"
+2022/07/06 09:36:56 [error] 4109#4109: *131 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.19.203, server: , request: "POST / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "52.37.17.166"
+2022/07/06 09:45:50 [error] 4109#4109: *260 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.19.203, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "52.37.17.166"
+2022/07/06 09:51:50 [error] 4109#4109: *357 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.35.244, server: , request: "POST /mgmt/tm/util/bash HTTP/1.1", upstream: "http://127.0.0.1:8000/mgmt/tm/util/bash", host: "100.20.166.166"
+2022/07/06 09:51:51 [error] 4109#4109: *357 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.35.244, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "100.20.166.166"
+2022/07/06 09:55:56 [error] 4109#4109: *423 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.35.244, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "100.20.166.166"
+2022/07/06 10:00:21 [error] 5426#5426: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.35.244, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "golf-env.eba-qbxsvkt9.us-west-2.elasticbeanstalk.com"
+2022/07/06 10:00:23 [error] 5426#5426: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.35.244, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:8000/favicon.ico", host: "golf-env.eba-qbxsvkt9.us-west-2.elasticbeanstalk.com", referrer: "http://golf-env.eba-qbxsvkt9.us-west-2.elasticbeanstalk.com/"
+2022/07/06 10:01:15 [error] 5426#5426: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.35.244, server: , request: "GET /.env HTTP/1.1", upstream: "http://127.0.0.1:8000/.env", host: "100.20.166.166"
+2022/07/06 10:01:18 [error] 5426#5426: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.35.244, server: , request: "POST / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "100.20.166.166"
+2022/07/06 10:07:48 [error] 5426#5426: *122 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.35.244, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "100.20.166.166"
+2022/07/06 10:52:56 [error] 5426#5426: *763 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.35.244, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "100.20.166.166"
+2022/07/06 11:05:53 [error] 5426#5426: *944 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.19.203, server: , request: "GET /.env HTTP/1.1", upstream: "http://127.0.0.1:8000/.env", host: "52.37.17.166"
+2022/07/06 11:05:54 [error] 5426#5426: *944 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.19.203, server: , request: "POST / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "52.37.17.166"
+2022/07/06 11:08:33 [error] 5426#5426: *983 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.19.203, server: , request: "GET /.git/config HTTP/1.1", upstream: "http://127.0.0.1:8000/.git/config", host: "52.37.17.166"
+2022/07/06 11:12:31 [error] 5426#5426: *1044 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.35.244, server: , request: "GET /portal/redlion HTTP/1.1", upstream: "http://127.0.0.1:8000/portal/redlion", host: "100.20.166.166"
+2022/07/06 11:13:47 [error] 5426#5426: *1070 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.19.203, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "52.37.17.166"
+2022/07/06 11:20:01 [error] 5426#5426: *1157 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.35.244, server: , request: "GET /.git/config HTTP/1.1", upstream: "http://127.0.0.1:8000/.git/config", host: "100.20.166.166"
+2022/07/06 11:20:14 [error] 5426#5426: *1157 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.35.244, server: , request: "GET /.env HTTP/1.1", upstream: "http://127.0.0.1:8000/.env", host: "100.20.166.166"
+2022/07/06 11:20:14 [error] 5426#5426: *1157 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.35.244, server: , request: "POST / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "100.20.166.166"
+2022/07/06 11:24:28 [error] 5426#5426: *1232 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.35.244, server: , request: "GET /actuator/health HTTP/1.1", upstream: "http://127.0.0.1:8000/actuator/health", host: "100.20.166.166"
+2022/07/06 11:28:03 [error] 5426#5426: *1287 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.19.203, server: , request: "GET /portal/redlion HTTP/1.1", upstream: "http://127.0.0.1:8000/portal/redlion", host: "52.37.17.166"
+2022/07/06 11:31:47 [error] 5426#5426: *1342 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.35.244, server: , request: "GET /.env HTTP/1.1", upstream: "http://127.0.0.1:8000/.env", host: "100.20.166.166"
+2022/07/06 11:31:47 [error] 5426#5426: *1342 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.35.244, server: , request: "POST / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "100.20.166.166"
+
+
+----------------------------------------
+/var/log/web.stdout.log
+----------------------------------------
+Jul  6 09:59:34 ip-172-31-39-164 web: File "/var/app/current/myshop/__init__.py", line 1, in <module>
+Jul  6 09:59:34 ip-172-31-39-164 web: from .celery import app as celery_app
+Jul  6 09:59:34 ip-172-31-39-164 web: File "/var/app/current/myshop/celery.py", line 2, in <module>
+Jul  6 09:59:34 ip-172-31-39-164 web: from celery import Celery
+Jul  6 09:59:34 ip-172-31-39-164 web: ModuleNotFoundError: No module named 'celery'
+Jul  6 09:59:34 ip-172-31-39-164 web: [2022-07-06 09:59:34 +0000] [5485] [INFO] Worker exiting (pid: 5485)
+Jul  6 09:59:34 ip-172-31-39-164 web: [2022-07-06 09:59:34 +0000] [5478] [INFO] Shutting down: Master
+Jul  6 09:59:34 ip-172-31-39-164 web: [2022-07-06 09:59:34 +0000] [5478] [INFO] Reason: Worker failed to boot.
+Jul  6 09:59:35 ip-172-31-39-164 web: [2022-07-06 09:59:35 +0000] [5493] [INFO] Starting gunicorn 20.1.0
+Jul  6 09:59:35 ip-172-31-39-164 web: [2022-07-06 09:59:35 +0000] [5493] [INFO] Listening at: http://127.0.0.1:8000 (5493)
+Jul  6 09:59:35 ip-172-31-39-164 web: [2022-07-06 09:59:35 +0000] [5493] [INFO] Using worker: gthread
+Jul  6 09:59:35 ip-172-31-39-164 web: [2022-07-06 09:59:35 +0000] [5500] [INFO] Booting worker with pid: 5500
+Jul  6 09:59:35 ip-172-31-39-164 web: [2022-07-06 09:59:35 +0000] [5500] [ERROR] Exception in worker process
+Jul  6 09:59:35 ip-172-31-39-164 web: Traceback (most recent call last):
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/venv/staging-LQM1lest/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+Jul  6 09:59:35 ip-172-31-39-164 web: worker.init_process()
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/venv/staging-LQM1lest/lib/python3.7/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+Jul  6 09:59:35 ip-172-31-39-164 web: super().init_process()
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/venv/staging-LQM1lest/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+Jul  6 09:59:35 ip-172-31-39-164 web: self.load_wsgi()
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/venv/staging-LQM1lest/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+Jul  6 09:59:35 ip-172-31-39-164 web: self.wsgi = self.app.wsgi()
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/venv/staging-LQM1lest/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+Jul  6 09:59:35 ip-172-31-39-164 web: self.callable = self.load()
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/venv/staging-LQM1lest/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+Jul  6 09:59:35 ip-172-31-39-164 web: return self.load_wsgiapp()
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/venv/staging-LQM1lest/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+Jul  6 09:59:35 ip-172-31-39-164 web: return util.import_app(self.app_uri)
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/venv/staging-LQM1lest/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+Jul  6 09:59:35 ip-172-31-39-164 web: mod = importlib.import_module(module)
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/usr/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+Jul  6 09:59:35 ip-172-31-39-164 web: return _bootstrap._gcd_import(name[level:], package, level)
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/current/myshop/__init__.py", line 1, in <module>
+Jul  6 09:59:35 ip-172-31-39-164 web: from .celery import app as celery_app
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/current/myshop/celery.py", line 2, in <module>
+Jul  6 09:59:35 ip-172-31-39-164 web: from celery import Celery
+Jul  6 09:59:35 ip-172-31-39-164 web: ModuleNotFoundError: No module named 'celery'
+Jul  6 09:59:35 ip-172-31-39-164 web: [2022-07-06 09:59:35 +0000] [5500] [INFO] Worker exiting (pid: 5500)
+Jul  6 09:59:35 ip-172-31-39-164 web: [2022-07-06 09:59:35 +0000] [5493] [INFO] Shutting down: Master
+Jul  6 09:59:35 ip-172-31-39-164 web: [2022-07-06 09:59:35 +0000] [5493] [INFO] Reason: Worker failed to boot.
+Jul  6 09:59:35 ip-172-31-39-164 web: [2022-07-06 09:59:35 +0000] [5508] [INFO] Starting gunicorn 20.1.0
+Jul  6 09:59:35 ip-172-31-39-164 web: [2022-07-06 09:59:35 +0000] [5508] [INFO] Listening at: http://127.0.0.1:8000 (5508)
+Jul  6 09:59:35 ip-172-31-39-164 web: [2022-07-06 09:59:35 +0000] [5508] [INFO] Using worker: gthread
+Jul  6 09:59:35 ip-172-31-39-164 web: [2022-07-06 09:59:35 +0000] [5515] [INFO] Booting worker with pid: 5515
+Jul  6 09:59:35 ip-172-31-39-164 web: [2022-07-06 09:59:35 +0000] [5515] [ERROR] Exception in worker process
+Jul  6 09:59:35 ip-172-31-39-164 web: Traceback (most recent call last):
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/venv/staging-LQM1lest/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+Jul  6 09:59:35 ip-172-31-39-164 web: worker.init_process()
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/venv/staging-LQM1lest/lib/python3.7/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+Jul  6 09:59:35 ip-172-31-39-164 web: super().init_process()
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/venv/staging-LQM1lest/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+Jul  6 09:59:35 ip-172-31-39-164 web: self.load_wsgi()
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/venv/staging-LQM1lest/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+Jul  6 09:59:35 ip-172-31-39-164 web: self.wsgi = self.app.wsgi()
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/venv/staging-LQM1lest/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+Jul  6 09:59:35 ip-172-31-39-164 web: self.callable = self.load()
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/venv/staging-LQM1lest/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+Jul  6 09:59:35 ip-172-31-39-164 web: return self.load_wsgiapp()
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/venv/staging-LQM1lest/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+Jul  6 09:59:35 ip-172-31-39-164 web: return util.import_app(self.app_uri)
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/venv/staging-LQM1lest/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+Jul  6 09:59:35 ip-172-31-39-164 web: mod = importlib.import_module(module)
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/usr/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+Jul  6 09:59:35 ip-172-31-39-164 web: return _bootstrap._gcd_import(name[level:], package, level)
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+Jul  6 09:59:35 ip-172-31-39-164 web: File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/current/myshop/__init__.py", line 1, in <module>
+Jul  6 09:59:35 ip-172-31-39-164 web: from .celery import app as celery_app
+Jul  6 09:59:35 ip-172-31-39-164 web: File "/var/app/current/myshop/celery.py", line 2, in <module>
+Jul  6 09:59:35 ip-172-31-39-164 web: from celery import Celery
+Jul  6 09:59:35 ip-172-31-39-164 web: ModuleNotFoundError: No module named 'celery'
+Jul  6 09:59:35 ip-172-31-39-164 web: [2022-07-06 09:59:35 +0000] [5515] [INFO] Worker exiting (pid: 5515)
+Jul  6 09:59:35 ip-172-31-39-164 web: [2022-07-06 09:59:35 +0000] [5508] [INFO] Shutting down: Master
+Jul  6 09:59:35 ip-172-31-39-164 web: [2022-07-06 09:59:35 +0000] [5508] [INFO] Reason: Worker failed to boot.
+
+
+----------------------------------------
+/var/log/eb-engine.log
+----------------------------------------
+  Using cached imageio-2.19.3-py3-none-any.whl (3.4 MB)
+Collecting incremental==21.3.0
+  Using cached incremental-21.3.0-py2.py3-none-any.whl (15 kB)
+Collecting itsdangerous==2.1.2
+  Using cached itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+Collecting Jinja2==3.1.2
+  Using cached Jinja2-3.1.2-py3-none-any.whl (133 kB)
+Collecting kombu==5.2.4
+  Using cached kombu-5.2.4-py3-none-any.whl (189 kB)
+Collecting MarkupSafe==2.1.1
+  Using cached MarkupSafe-2.1.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+Collecting msgpack==1.0.4
+  Using cached msgpack-1.0.4-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (299 kB)
+Collecting networkx==2.6.3
+  Using cached networkx-2.6.3-py3-none-any.whl (1.9 MB)
+Collecting numpy
+  Using cached numpy-1.21.6-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (15.7 MB)
+Collecting packaging
+  Using cached packaging-21.3-py3-none-any.whl (40 kB)
+Collecting pandas
+  Using cached pandas-1.3.5-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.3 MB)
+Collecting phonenumbers==8.12.44
+  Using cached phonenumbers-8.12.44-py2.py3-none-any.whl (2.6 MB)
+Collecting Pillow==9.0.1
+  Using cached Pillow-9.0.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.3 MB)
+Collecting plotly==5.8.2
+  Using cached plotly-5.8.2-py2.py3-none-any.whl (15.2 MB)
+Collecting prompt-toolkit==3.0.28
+  Using cached prompt_toolkit-3.0.28-py3-none-any.whl (380 kB)
+Collecting pyasn1==0.4.8
+  Using cached pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
+Collecting pyasn1-modules==0.2.8
+  Using cached pyasn1_modules-0.2.8-py2.py3-none-any.whl (155 kB)
+Collecting pycparser==2.21
+  Using cached pycparser-2.21-py2.py3-none-any.whl (118 kB)
+Collecting pydyf==0.1.2
+  Using cached pydyf-0.1.2-py3-none-any.whl (6.4 kB)
+Collecting pyOpenSSL==22.0.0
+  Using cached pyOpenSSL-22.0.0-py2.py3-none-any.whl (55 kB)
+Collecting pyparsing==3.0.9
+  Using cached pyparsing-3.0.9-py3-none-any.whl (98 kB)
+Collecting pyphen==0.12.0
+  Using cached pyphen-0.12.0-py3-none-any.whl (2.0 MB)
+Collecting python-dateutil==2.8.2
+  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting pytz==2021.3
+  Using cached pytz-2021.3-py2.py3-none-any.whl (503 kB)
+Collecting PyWavelets==1.3.0
+  Using cached PyWavelets-1.3.0-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (6.4 MB)
+Collecting redis==4.3.3
+  Using cached redis-4.3.3-py3-none-any.whl (244 kB)
+Collecting requests==2.27.1
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Collecting scikit-image==0.19.3
+  Using cached scikit_image-0.19.3-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (13.5 MB)
+Collecting scipy==1.7.3
+  Downloading scipy-1.7.3-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (38.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 38.1/38.1 MB 9.5 MB/s eta 0:00:00
+Collecting service-identity==21.1.0
+  Downloading service_identity-21.1.0-py2.py3-none-any.whl (12 kB)
+Collecting six==1.16.0
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting sqlparse==0.4.2
+  Downloading sqlparse-0.4.2-py3-none-any.whl (42 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.3/42.3 KB 9.3 MB/s eta 0:00:00
+Collecting tenacity==8.0.1
+  Downloading tenacity-8.0.1-py3-none-any.whl (24 kB)
+
+2022/07/06 11:40:40.001814 [INFO] ERROR: Could not find a version that satisfies the requirement tifffile==2022.5.4 (from versions: 0.1.0, 0.2.0, 0.3.0, 0.3.1, 0.3.2, 0.3.3, 0.4, 0.5, 0.6.0, 0.6.1, 0.6.2, 0.7.0, 0.8.0, 0.9.0, 0.9.1, 0.9.2, 0.10.0, 0.11.0, 0.11.1, 0.12.0, 0.12.1, 0.13.0, 0.13.1, 0.13.2, 0.13.4, 0.13.5, 0.14.0, 0.15.0, 0.15.1, 2018.10.18, 2018.11.6, 2018.11.28, 2019.1.1, 2019.1.4, 2019.1.30, 2019.2.10, 2019.2.22, 2019.3.8, 2019.3.18, 2019.5.22, 2019.5.30, 2019.6.18, 2019.7.2, 2019.7.20, 2019.7.26, 2019.7.26.2, 2020.2.16, 2020.5.5, 2020.5.7, 2020.5.11, 2020.5.25, 2020.5.30, 2020.6.3, 2020.7.4, 2020.7.17, 2020.7.22, 2020.7.24, 2020.8.13, 2020.8.25, 2020.9.3, 2020.9.22, 2020.9.28, 2020.9.29, 2020.9.30, 2020.10.1, 2020.11.18, 2020.11.26, 2020.12.4, 2020.12.8, 2021.1.8, 2021.1.11, 2021.1.14, 2021.2.1, 2021.2.26, 2021.3.4, 2021.3.5, 2021.3.16, 2021.3.17, 2021.3.31, 2021.4.8, 2021.6.6, 2021.6.14, 2021.7.2, 2021.7.30, 2021.8.8, 2021.8.30, 2021.10.10, 2021.10.12, 2021.11.2)
+ERROR: No matching distribution found for tifffile==2022.5.4
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the '/var/app/venv/staging-LQM1lest/bin/python -m pip install --upgrade pip' command.
+
+2022/07/06 11:40:40.001870 [ERROR] An error occurred during execution of command [app-deploy] - [InstallDependency]. Stop running the command. Error: fail to install dependencies with requirements.txt file with error Command /bin/sh -c /var/app/venv/staging-LQM1lest/bin/pip install -r requirements.txt failed with error exit status 1. Stderr:ERROR: Could not find a version that satisfies the requirement tifffile==2022.5.4 (from versions: 0.1.0, 0.2.0, 0.3.0, 0.3.1, 0.3.2, 0.3.3, 0.4, 0.5, 0.6.0, 0.6.1, 0.6.2, 0.7.0, 0.8.0, 0.9.0, 0.9.1, 0.9.2, 0.10.0, 0.11.0, 0.11.1, 0.12.0, 0.12.1, 0.13.0, 0.13.1, 0.13.2, 0.13.4, 0.13.5, 0.14.0, 0.15.0, 0.15.1, 2018.10.18, 2018.11.6, 2018.11.28, 2019.1.1, 2019.1.4, 2019.1.30, 2019.2.10, 2019.2.22, 2019.3.8, 2019.3.18, 2019.5.22, 2019.5.30, 2019.6.18, 2019.7.2, 2019.7.20, 2019.7.26, 2019.7.26.2, 2020.2.16, 2020.5.5, 2020.5.7, 2020.5.11, 2020.5.25, 2020.5.30, 2020.6.3, 2020.7.4, 2020.7.17, 2020.7.22, 2020.7.24, 2020.8.13, 2020.8.25, 2020.9.3, 2020.9.22, 2020.9.28, 2020.9.29, 2020.9.30, 2020.10.1, 2020.11.18, 2020.11.26, 2020.12.4, 2020.12.8, 2021.1.8, 2021.1.11, 2021.1.14, 2021.2.1, 2021.2.26, 2021.3.4, 2021.3.5, 2021.3.16, 2021.3.17, 2021.3.31, 2021.4.8, 2021.6.6, 2021.6.14, 2021.7.2, 2021.7.30, 2021.8.8, 2021.8.30, 2021.10.10, 2021.10.12, 2021.11.2)
+ERROR: No matching distribution found for tifffile==2022.5.4
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the '/var/app/venv/staging-LQM1lest/bin/python -m pip install --upgrade pip' command.
+ 
+
+2022/07/06 11:40:40.001876 [INFO] Executing cleanup logic
+2022/07/06 11:40:40.002009 [INFO] CommandService Response: {"status":"FAILURE","api_version":"1.0","results":[{"status":"FAILURE","msg":"Engine execution has encountered an error.","returncode":1,"events":[{"msg":"Instance deployment failed to install application dependencies. The deployment failed.","timestamp":1657107640001,"severity":"ERROR"},{"msg":"Instance deployment failed. For details, see 'eb-engine.log'.","timestamp":1657107640001,"severity":"ERROR"}]}]}
+
+2022/07/06 11:40:40.002238 [INFO] Platform Engine finished execution on command: app-deploy
+
+2022/07/06 11:41:24.647520 [INFO] Starting...
+2022/07/06 11:41:24.647577 [INFO] Starting EBPlatform-PlatformEngine
+2022/07/06 11:41:24.647602 [INFO] reading event message file
+2022/07/06 11:41:24.647771 [INFO] Engine received EB command cfn-hup-exec
+
+2022/07/06 11:41:24.727856 [INFO] Running command /bin/sh -c /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:us-west-2:721731202363:stack/awseb-e-iue6jxin2w-stack/28971e70-fd0c-11ec-8f76-0a149482fa65 -r AWSEBAutoScalingGroup --region us-west-2
+2022/07/06 11:41:25.092605 [INFO] Running command /bin/sh -c /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:us-west-2:721731202363:stack/awseb-e-iue6jxin2w-stack/28971e70-fd0c-11ec-8f76-0a149482fa65 -r AWSEBBeanstalkMetadata --region us-west-2
+2022/07/06 11:41:25.395937 [INFO] checking whether command tail-log is applicable to this instance...
+2022/07/06 11:41:25.395953 [INFO] this command is applicable to the instance, thus instance should execute command
+2022/07/06 11:41:25.395958 [INFO] Engine command: (tail-log)
+
+2022/07/06 11:41:25.396013 [INFO] Executing instruction: GetTailLogs
+2022/07/06 11:41:25.396019 [INFO] Tail Logs...
+2022/07/06 11:41:25.396294 [INFO] Running command /bin/sh -c tail -n 100 /var/log/nginx/error.log
+2022/07/06 11:41:25.398685 [INFO] Running command /bin/sh -c tail -n 100 /var/log/web.stdout.log
+2022/07/06 11:41:25.400356 [INFO] Running command /bin/sh -c tail -n 100 /var/log/eb-engine.log
+
+
+----------------------------------------
+/var/log/eb-hooks.log
+----------------------------------------
+
+
+----------------------------------------
+/var/log/nginx/access.log
+----------------------------------------
+172.31.35.244 - - [06/Jul/2022:09:33:41 +0000] "GET /hudson HTTP/1.1" 502 157 "-" "Mozilla/5.0 zgrab/0.x" "192.241.221.78"
+172.31.19.203 - - [06/Jul/2022:09:36:54 +0000] "GET /.env HTTP/1.1" 502 559 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36" "185.254.196.115"
+172.31.19.203 - - [06/Jul/2022:09:36:56 +0000] "POST / HTTP/1.1" 502 559 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36" "185.254.196.115"
+172.31.19.203 - - [06/Jul/2022:09:45:50 +0000] "GET / HTTP/1.1" 502 157 "-" "-" "91.173.112.176"
+172.31.35.244 - admin [06/Jul/2022:09:51:50 +0000] "POST /mgmt/tm/util/bash HTTP/1.1" 502 559 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36" "190.3.23.122"
+172.31.35.244 - - [06/Jul/2022:09:51:51 +0000] "GET / HTTP/1.1" 502 157 "-" "curl/7.58.0" "190.3.23.122"
+172.31.35.244 - - [06/Jul/2022:09:55:56 +0000] "GET / HTTP/1.1" 502 559 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36" "189.127.241.217"
+172.31.35.244 - - [06/Jul/2022:10:00:21 +0000] "GET / HTTP/1.1" 502 157 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0" "103.138.144.170"
+172.31.35.244 - - [06/Jul/2022:10:00:23 +0000] "GET /favicon.ico HTTP/1.1" 502 157 "http://golf-env.eba-qbxsvkt9.us-west-2.elasticbeanstalk.com/" "Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0" "103.138.144.170"
+172.31.35.244 - - [06/Jul/2022:10:01:15 +0000] "GET /.env HTTP/1.1" 502 559 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36" "95.214.235.205"
+172.31.35.244 - - [06/Jul/2022:10:01:18 +0000] "POST / HTTP/1.1" 502 559 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36" "95.214.235.205"
+172.31.35.244 - - [06/Jul/2022:10:07:48 +0000] "GET / HTTP/1.1" 502 157 "-" "Mozilla/5.0 (iPad; CPU OS 13_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/79.0.259819395 Mobile/17A5556d Safari/604.1" "49.36.94.4"
+172.31.35.244 - - [06/Jul/2022:10:52:56 +0000] "GET / HTTP/1.1" 502 157 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0" "183.136.225.35"
+172.31.19.203 - - [06/Jul/2022:11:05:53 +0000] "GET /.env HTTP/1.1" 502 559 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36" "185.254.196.115"
+172.31.19.203 - - [06/Jul/2022:11:05:54 +0000] "POST / HTTP/1.1" 502 559 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36" "185.254.196.115"
+172.31.19.203 - - [06/Jul/2022:11:08:33 +0000] "GET /.git/config HTTP/1.1" 502 157 "-" "python-requests/2.22.0" "18.222.255.173"
+172.31.35.244 - - [06/Jul/2022:11:12:31 +0000] "GET /portal/redlion HTTP/1.1" 502 157 "-" "Mozilla/5.0 zgrab/0.x" "192.241.214.64"
+172.31.19.203 - - [06/Jul/2022:11:13:47 +0000] "GET / HTTP/1.1" 502 559 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" "94.102.61.10"
+172.31.35.244 - - [06/Jul/2022:11:20:01 +0000] "GET /.git/config HTTP/1.1" 502 157 "-" "python-requests/2.22.0" "18.223.143.156"
+172.31.35.244 - - [06/Jul/2022:11:20:14 +0000] "GET /.env HTTP/1.1" 502 157 "-" "MMozilla/5.0 (Windows; U; Windows NT 6.0; en-GB; rv:1.9.2.24) Gecko/20111103 Firefox/3.6.24" "18.216.236.1"
+172.31.35.244 - - [06/Jul/2022:11:20:14 +0000] "POST / HTTP/1.1" 502 157 "-" "MMozilla/5.0 (Windows; U; Windows NT 6.0; en-GB; rv:1.9.2.24) Gecko/20111103 Firefox/3.6.24" "18.216.236.1"
+172.31.35.244 - - [06/Jul/2022:11:24:28 +0000] "GET /actuator/health HTTP/1.1" 502 157 "-" "Mozilla/5.0 zgrab/0.x" "192.241.222.47"
+172.31.19.203 - - [06/Jul/2022:11:28:03 +0000] "GET /portal/redlion HTTP/1.1" 502 157 "-" "Mozilla/5.0 zgrab/0.x" "192.241.219.174"
+172.31.35.244 - - [06/Jul/2022:11:31:47 +0000] "GET /.env HTTP/1.1" 502 559 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36" "95.214.235.205"
+172.31.35.244 - - [06/Jul/2022:11:31:47 +0000] "POST / HTTP/1.1" 502 559 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36" "95.214.235.205"
+
+
