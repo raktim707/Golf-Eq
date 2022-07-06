@@ -1,18 +1,27 @@
+@import url(http://fonts.cdnfonts.com/css/nasa21);
+@import url(https://fonts.googleapis.com/css?family=Chivo);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 
 body { 
-    margin:0;
-    padding:0;
-    font-family:helvetica, sans-serif; 
+    
+    font-family: 'Chivo', helvetica, sans-serif; 
+    background: linear-gradient(to right, #000000e7, #ceaaaaea);
+    min-height: 100vh;
+}
+
+.mynav { height: 95px; margin-top: 12px; position: relative;}
+
+.mynav .navbar-brand {
+    background: white;
 }
 
 h1, h2, h3, h4, h5 , h6 { 
-    font-family: 'Ubuntu', sans-serif; font-weight:normal;
+    font-weight:bolder;
 }
 
 a {
     text-decoration:none;
-    color:#106daf;
+    color:#5f8dff;
     font-style:oblique;
 }
 
@@ -107,6 +116,19 @@ form p input {
     border-radius:4px;
 }
 
+footer { background-color: #f7f7f7; padding: 70px 0; margin-top: 13em; }
+footer p { font-size: 13px; margin: 0; }
+.footer-leftcol p { text-align: left; }
+.footer-rightcol p { text-align: right; font-style: italic; margin-top: 20px; }
+.bold-16p { font-size: 15px; font-weight: 600; }
+.footer-midcol { margin-left: auto; margin-right: auto; }
+.footer-midcol ul { text-align: center; padding: 0; }
+.footer-midcol li { list-style: none; display: inline-block; margin-right: 15px; }
+.footer-midcol li a { opacity: 1; }
+.footer-midcol li a:hover { opacity: 0.5; }
+.twitter-icon { background: url(../img/twitter-icon.png); height: 34px; width: 35px; display: block; text-indent: -9999px; }
+.facebook-icon { background: url(../img/facebook-icon.png); height: 34px; width: 35px; display: block; text-indent: -9999px; }
+.pintrest-icon { background: url(../img/pintrest-icon.png); height: 34px; width: 35px; display: block; text-indent: -9999px; }
 ul.errorlist {
    float:left;
    color:#ff0000;
@@ -116,7 +138,10 @@ ul.errorlist {
    padding:0;
 }
 
-
+#filter {
+    background: green;
+    width:80%;
+}
 #header {
     padding:10px 100px;
     font-size:18px;
@@ -149,9 +174,12 @@ ul.errorlist {
 }
 
 #sidebar {
+    margin: 176px 10px;
     width:220px;
-    padding:30px 20px 0 0;
+    padding: 20px 20px 30px 30px;
     float:left;
+    background: #464639;
+    line-height: normal;
 }
 
 #sidebar ul{
@@ -185,6 +213,13 @@ ul.errorlist {
     overflow:hidden;
 }
 
+.pagination {
+    margin-right: 35em;
+    text-align: center;
+    flex: content;
+    float:right;
+    background-color:#ae95c2 ;
+}
 .product-list .item {
     width:25%;
     padding:10px 90px 10px 0;
@@ -194,7 +229,7 @@ ul.errorlist {
 }
 
 .product-list .item img {
-    width: 140%;
+    width: 115%;
 	height: 230px;
     margin-bottom: 6px;
 	-webkit-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
@@ -204,12 +239,12 @@ ul.errorlist {
 
 .product-detail {
     text-align:justify;
+    padding: 25px;
 }
 
 .product-detail .price {
     color:#333;
-    font-size:28px;
-    font-weight:bold;
+    font-size: 18px;
 }
 
 .product-detail img {
@@ -333,3 +368,4 @@ form div.field {
     color:#666;
     border-radius:4px;
 }
+

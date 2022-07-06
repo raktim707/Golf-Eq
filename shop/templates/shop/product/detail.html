@@ -7,20 +7,57 @@
 
 {% block content %}
 <div class="product-detail">
-    <img src="{% if product.image %}{{ product.image.url }}{% else %}
-    {% static "img/no_image.png" %}{% endif %}">
+    <img src="{% if product.image_url %}{{ product.image_url }}{% else %}
+    {% static "img/no_image.png" %}{% endif %}" width="200" height="520">
     <h1>{{ product.name }}</h1>
-    <h2>
-        <a href="{{ product.category.get_absolute_url }}">
+    <br>
+    
+    <div class="d-flex flex-row">
+      <div class="p-2 border" style="background:#4059a6">
+        <a href="{{ product.category.get_absolute_url }}" style="color: white ; font-weight: bold;">
             {{ product.category }}
         </a>
-    </h2>
-    <p class="price">BDT {{ product.price }}</p>
-    <form action="{% url 'cart:cart_add' product.id %}" method="POST">
-        {{ cart_product_form }}
-        {% csrf_token %}
-        <input type="submit" value="Add to cart">
-    </form>
-    {{ product.description|linebreaks }}
+      </div>&nbsp;&nbsp;
+      {% if product.amazon_link %}
+        <div class="p-2 border" style="background: #4059a6;">
+          <a href="{{product.amazon_link}}" style="color: white">Get this on Amazon</a>
+        </div>
+      {% endif %}
     </div>
+      <br><br>
+      <div class="d-flex flex-column">
+        <div class="p-2 border flex-shrink-0 bg-info"><b>Brand: </b> {{ product.brand }}</div>
+        <div class="p-2 border bg-info"><b>LeftHand: </b> {% if product.leftHand %}Yes {% else %} No{% endif %}</div>
+        <div class="p-2 border bg-info"><b>Color: </b> {{product.color}}</div>
+      </div>
+
+    <div class="m-5 d-flex flex-row bg-secondary flex-container">
+        <table class="table table-responsive-sm table-dark table-striped">
+            <thead>
+              <tr>
+                <th>Hosel Setting</th>
+                <th>Loft</th>
+                <th>CG</th>
+                <th>Lie</th>
+                <th>Face Angle</th>
+                <th>Offset</th>
+                <th>Sole width</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{product.hoselSetting}}</td>
+                <td>{{ product.loft }}</td>
+                <td>{{product.cg}}</td>
+                <td>{{product.lie}}</td>
+                <td>{{product.faceAngle}}</td>
+                <td>{{product.offset}}</td>
+                <td>{{product.soleWidth}}</td>
+              </tr>
+             
+            </tbody>
+          </table>
+    </div>
+</div>
+
 {% endblock %}

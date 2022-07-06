@@ -1,0 +1,15 @@
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dash apps
+    </a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    {% for item in all_apps %}
+   
+        <a class="dropdown-item" href="{% url 'shop:dash_app' item.id %}">{{item.display_name}}</a>
+    
+    
+    {% endfor %}
+
+</div>
+
+</li>

@@ -1,0 +1,60 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+{{ product.name }}
+{% endblock %}
+
+{% block content %}
+
+<div id="sidebar" class="text-white border">
+    <h3>Filter By</h3>
+    <form method="post">
+        {% csrf_token %}
+        {{form|crispy}}
+        <br>
+        <input id= "filter" type="submit" value="submit">
+    </form>
+    
+</div>
+<div class="container py-5">
+    <div class="row text-center text-white mb-5">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="display-4" style="align-items: center;">{% if category %}{{ category.name }}{% elif query %}search results for {{query}}{% else %} club list {% endif %}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <!-- List group-->
+            <ul class="list-group shadow">
+
+                {% for product in products %}
+                <!-- list group item-->
+                <li class="list-group-item">
+                    <!-- Custom content-->
+                    <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+                        <div class="media-body order-2 order-lg-1">
+                            <h5 class="mt-0 font-weight-bold mb-2"><a href="{{ product.get_absolute_url }}">{{product.name}}</a></h5>
+                            <p class="font-italic text-muted mb-0 small">{% if product.leftHand %} Lefthand {% endif %}| {{product.hoselSetting}} hosel Setting | {{product.loft}}° Loft | {{product.faceAngle}} face angle | color {{product.color}}</p>
+                            <div class="d-flex align-items-center justify-content-between mt-1">
+                                <h6 class="font-weight-bold my-2">{{product.brand}} {{product.category}}</h6>
+                                <ul class="list-inline small">
+                                    <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                    <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                    <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                    <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                    <li class="list-inline-item m-0"><i class="fa fa-star-o text-gray"></i></li>
+                                </ul>
+                            </div>
+                        </div><img src="{{product.image_url}}" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+                    </div> <!-- End -->
+                </li>
+                {% endfor %}
+                 <!-- End -->
+            </ul> <!-- End -->
+        </div>
+    </div>
+</div>
+{% include "shop/product/pagination.html" with page=products %}
+{% endblock %}

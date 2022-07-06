@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Category, Product
+from .models import Category, Product, MyDashApp
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
@@ -8,8 +8,9 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ['name', 'slug', 'price',
-    'available', 'created', 'updated']
-    list_filter = ['available', 'created', 'updated']
-    list_editable = ['price', 'available']
+    list_display = ['name', 'slug', 'category', 'brand']
+    list_filter = ['name', 'created', 'updated']
+    list_editable = ['slug', 'category', 'brand']
     prepopulated_fields = {'slug': ('name',)}
+
+admin.site.register(MyDashApp)

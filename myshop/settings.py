@@ -23,23 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'j)d(4t9mt2_$l2h)ktm57unz6vo*y233w)h2kj2-(e#ausdnc!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
-#Braintree Settings
-
-BRAINTREE_MERCHANT_ID = '<YourID>'
-BRAINTREE_PUBLIC_KEY = '<YourKey>'
-BRAINTREE_PRIVATE_KEY = '<YourKey>'
-
-import braintree
-BRAINTREE_CONF = braintree.Configuration(
-    braintree.Environment.Sandbox,
-    BRAINTREE_MERCHANT_ID,
-    BRAINTREE_PUBLIC_KEY,
-    BRAINTREE_PRIVATE_KEY
-)
 # Application definition
 
 INSTALLED_APPS = [
@@ -51,10 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'shop.apps.ShopConfig',
-    'cart.apps.CartConfig',
-    'orders.apps.OrdersConfig',
     'crispy_forms',
-    'payment.apps.PaymentConfig',
+    'django_plotly_dash.apps.DjangoPlotlyDashConfig',
+    'channels',
+    'channels_redis',
 ]
 
 MIDDLEWARE = [
@@ -133,6 +120,32 @@ USE_L10N = True
 USE_TZ = True
 
 
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            'hosts': [('127.0.0.1', 6379), ],
+        }
+    }
+}
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'django_plotly_dash.finders.DashAssetFinder',
+    'django_plotly_dash.finders.DashComponentFinder',
+]
+
+PLOTLY_COMPONENTS = [
+    'dash_core_components',
+    'dash_html_components',
+    'dash_renderer',
+
+    'dpd_components',
+]
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+ASGI_APPLICATION = 'myshop.routing.application'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
@@ -147,11 +160,7 @@ MEDIA_ROOT = (
 
 CART_SESSION_ID = 'cart'
 
-PHONENUMBER_DB_FORMAT='E164'
-PHONENUMBER_DEFAULT_REGION='BD'
+PHONENUMBER_DB_FORMAT = 'E164'
+PHONENUMBER_DEFAULT_REGION = 'BD'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
-REDIS_HOST = 'localhost'
-REDIS_PORT = 6379
-REDIS_DB = 1
 
